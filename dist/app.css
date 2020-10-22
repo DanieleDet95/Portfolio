@@ -10995,6 +10995,7 @@ body .wrapper .block-info .middle {
   height: calc(98vh - 70px);
   overflow: auto;
   scrollbar-width: none;
+  background: #2d2d3a;
 }
 
 body .wrapper .block-info .middle::-webkit-scrollbar {
@@ -11298,6 +11299,81 @@ body .wrapper .portfolio .card:hover p {
   color: white;
 }
 
+body .wrapper .message {
+  background: #23232e;
+  overflow: auto;
+  scrollbar-width: none;
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 30px);
+  transition: 0.55s ease-in-out;
+}
+
+body .wrapper .message::-webkit-scrollbar {
+  display: none;
+}
+
+body .wrapper .message .p-30 {
+  padding-top: 30px;
+}
+
+body .wrapper .message h1 {
+  color: #ffc107;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body .wrapper .message .form-message {
+  background: #2d2d3a;
+  margin: 30px;
+}
+
+body .wrapper .message .form-message .input-group {
+  margin: 30px 0;
+}
+
+body .wrapper .message .form-message .input-group input {
+  background: #23232e;
+  border: none;
+  color: white;
+}
+
+body .wrapper .message .form-message .input-group span {
+  background: #20202a;
+  border: none;
+}
+
+body .wrapper .message .form-message .input-group i {
+  color: white;
+}
+
+body .wrapper .message .form-message textarea {
+  background: #23232e;
+  border: none;
+  color: white;
+}
+
+body .wrapper .message .form-message .button {
+  font-size: 14px;
+  padding: 15px 35px;
+  background: #ffc107;
+  margin: 20px 0;
+  text-transform: uppercase;
+  box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  color: #20202a;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  transition: 0.4s ease-in-out;
+}
+
+body .wrapper .message .form-message .button:hover {
+  transform: translateY(-2px);
+}
+
 body .wrapper footer {
   width: 100%;
   padding: 17px 30px 7px;
@@ -11305,7 +11381,7 @@ body .wrapper footer {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  background: #20202a;
+  background: #2d2d3a;
   box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
   font-size: 12px;
   transition: 0.55s ease-in-out;
