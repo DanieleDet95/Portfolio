@@ -1,0 +1,379 @@
+body{
+  background: $background_color;
+  .wrapper{
+    display: flex;
+    margin: 15px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    // Block left
+    .block-info{
+      width: 290px;
+      min-width: 290px;
+      height: calc(100vh - 30px);
+      width: 25%;
+      background: $primary_color;
+      position: relative;
+      z-index: 99999;
+
+      // Avatar and name
+      .top{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 50px;
+        padding-bottom: 0px;
+        z-index: 9999;
+        background: $primary_color;
+        .info-avatar{
+          width: 90px;
+          height: 90px;
+          margin: 0 auto;
+          border-radius: 50%;
+          position: relative;
+          margin-bottom: 15px;
+          img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            z-index: 0;
+
+          }
+        }
+        .info-name{
+          text-align: center;
+          color: $special_color;
+          h5{
+            font-weight: 600;
+          }
+        }
+        .info-text{
+          text-align: center;
+          color: lightgray;
+          margin-bottom: 30px;
+          h5{
+            font-weight: 200;
+          }
+        }
+      }
+
+      // Middle part
+      .middle{
+        padding: 265px 25px 50px;
+        width: 100%;
+        height: calc(98vh - 70px);
+        overflow: auto;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .info-infos{
+          font-size: 15px;
+          color: white;
+          font-weight: 600;
+          margin-bottom: 10px;
+          p{
+            margin-bottom: 0;
+          }
+          span{
+            color: lightgray;
+          }
+          hr{
+            background: white;
+          }
+          h4{
+            color: $special_color;
+          }
+
+          // My skills
+          .info-skills{
+            width: 100%;
+            span.right{
+              float: right;
+            }
+            .barra{
+              display: block;
+              width: 100%;
+              height: 5px;
+              margin: 10px 0;
+              background: white;
+              .html-bar{
+                position: relative;
+                width: 90%;
+                height: 5px;
+                background: $special_color;
+              }
+              .css-bar{
+                position: relative;
+                width: 80%;
+                height: 5px;
+                background: $special_color;
+              }
+              .js-bar{
+                position: relative;
+                width: 85%;
+                height: 5px;
+                background: $special_color;
+              }
+              .php-bar{
+                position: relative;
+                width: 85%;
+                height: 5px;
+                background: $special_color;
+              }
+
+              .wp-bar{
+                position: relative;
+                width: 75%;
+                height: 5px;
+                background: $special_color;
+              }
+            }
+          }
+        }
+
+        // Other skills
+        .competences{
+          .block{
+            margin: 10px;
+            img{
+              &:hover{
+                transform: scale(2);
+              }
+            }
+          }
+
+        }
+      }
+
+      // Social
+      .info-social{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 99999;
+        background: $primary_color;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 15px 35px;
+        height: 50px;
+        width: 100%;
+        transition: .2s ease-in-out;
+        a{
+          color: white;
+          i{
+            font-size: 30px;
+          }
+          &:hover{
+            color: $special_color;
+          }
+        }
+      }
+
+    }
+
+    @media (max-width: 768px) {
+      .block-info{
+        display: none;
+      }
+    }
+
+    // Block right
+    .home{
+      background: $secondary_color;
+      overflow: auto;
+      scrollbar-width: none;
+      position: relative;
+      width: 100vw;
+      height: calc(100vh - 30px);
+      transition: .55s ease-in-out;
+      &::-webkit-scrollbar {
+          display: none;
+      }
+      .p-30{
+        padding-top: 30px;
+      }
+
+      // Sfondo and banner
+      .col-top{
+        transform: scale(1);
+        opacity: 1;
+        .sfondo{
+          background-size: cover;
+          background-position: center;
+          position: relative;
+          box-shadow: 0 3px 8px 0 rgba(15,15,20,.2);
+          z-index: 99;
+          margin-bottom: 30px;
+          .banner{
+            position: relative;
+            display: flex;
+            padding: 60px;
+            width: 100%;
+            background-image: linear-gradient(90deg,rgba(45,45,58,.9) 15%,rgba(45,45,58,.7) 50%,rgba(43,43,53,.7) 100%);
+            .banner-text{
+              color: white;
+              h1{
+                font-size: 50px;
+                font-weight: bold;
+              }
+              i{
+                color: $special_color;
+              }
+              .button{
+                font-size: 14px;
+                padding: 15px 35px;
+                background: $special_color;
+                margin: 20px 0;
+                text-transform: uppercase;
+                box-shadow: 0 1px 4px 0 rgba(15,15,20,.1);
+                color: #20202a;
+                letter-spacing: 1.5px;
+                font-weight: 600;
+                display: inline-flex;
+                justify-content: center;
+                align-content: center;
+                border: none;
+                transition: .4s ease-in-out;
+                &:hover{
+                  transform: translateY(-2px);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // About me
+      .about_me{
+        h4{
+          text-align: center;
+          font-weight: bold;
+          color: $special_color;
+          margin-bottom: 20px;
+        }
+        .block{
+          font-size: 19px;
+          text-align: center;
+          padding: 30px;
+          background: $primary_color;
+          color: white;
+        }
+      }
+      // My services
+      .myservices{
+        margin-bottom: 20px;
+        h4{
+          text-align: center;
+          font-weight: bold;
+          color: $special_color;
+          margin: 20px 0;
+        }
+        .block{
+          text-align: center;
+          padding: 15px;
+          .contenitore{
+            font-size: 17px;
+            padding: 30px;
+            background: $primary_color;
+            h5{
+              font-size: 30px;
+              font-weight: bold;
+              color: white;
+            }
+          }
+          &:hover{
+
+            h5{
+              color: $special_color;
+            }
+            p{
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+    .portfolio{
+      background: $secondary_color;
+      overflow: auto;
+      scrollbar-width: none;
+      position: relative;
+      width: 100vw;
+      height: calc(100vh - 30px);
+      transition: .55s ease-in-out;
+      &::-webkit-scrollbar {
+          display: none;
+      }
+      .p-30{
+        padding-top: 30px;
+      }
+      h1{
+        color: $special_color;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .card{
+        border-radius: 30px;
+        background-color: $primary_color;
+        padding: 20px;
+        margin-bottom: 50px;
+        .immagine{
+          margin-bottom: 30px;
+          img{
+            border-radius: 15px;
+          }
+        }
+        h3{
+          color: white;
+          font-size: 31px;
+        }
+        p{
+          color: lightgray;
+          font-size: 18px;
+        }
+        &:hover{
+          h3{
+            color: $special_color;
+          }
+          p{
+            color: white;
+          }
+        }
+      }
+    }
+
+    // Footer
+    footer{
+      width: 100%;
+      padding: 17px 30px 7px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      background: $primary_color;
+      box-shadow: 0 1px 4px 0 rgba(15,15,20,.1);
+      font-size: 12px;
+      transition: .55s ease-in-out;
+      color: white;
+      a{
+        color: white;
+        &:hover{
+          color: $special_color;
+          text-decoration: none;
+        }
+      }
+    }
+
+  }
+}
