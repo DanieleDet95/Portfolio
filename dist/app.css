@@ -11111,12 +11111,6 @@ body .wrapper .block-info .info-social a:hover {
   color: #ffc107;
 }
 
-@media (max-width: 768px) {
-  body .wrapper .block-info {
-    display: none;
-  }
-}
-
 body .wrapper .home {
   background: #23232e;
   overflow: auto;
@@ -11395,5 +11389,42 @@ body .wrapper footer a {
 body .wrapper footer a:hover {
   color: #ffc107;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  body .wrapper {
+    display: block;
+  }
+
+  body .wrapper .block-info {
+    height: 300px;
+    width: 100%;
+  }
+
+  body .wrapper .block-info .top {
+    position: relative;
+    padding: 25px;
+  }
+
+  body .wrapper .block-info .middle {
+    display: none;
+  }
+
+  body .wrapper .home .banner .banner-text h1 {
+    text-align: center;
+    font-size: 37px !important;
+  }
+
+  body .wrapper .home .banner .banner-text .sottotitolo {
+    text-align: center;
+  }
+
+  body .wrapper .home .banner .banner-text form {
+    text-align: center;
+  }
+
+  body .wrapper .message {
+    height: calc(100vh - 200px);
+  }
 }
 

@@ -182,12 +182,6 @@ body{
 
     }
 
-    @media (max-width: 768px) {
-      .block-info{
-        display: none;
-      }
-    }
-
     // Block right
     .home{
       background: $secondary_color;
@@ -441,4 +435,44 @@ body{
     }
 
   }
+
+  // Impostazioni per la versione mobile
+  @media (max-width: 768px) {
+    .wrapper{
+      display: block;
+      .block-info{
+        height: 300px;
+        width: 100%;
+        .top{
+          position: relative;
+          padding: 25px;
+        }
+        .middle{
+          display: none;
+        }
+      }
+      .home{
+        .banner{
+          .banner-text{
+            h1{
+              text-align: center;
+              font-size: 37px !important;
+            }
+            .sottotitolo{
+              text-align: center;
+            }
+            form{
+              text-align: center;
+            }
+          }
+        }
+      }
+      .message{
+        height: calc(100vh - 200px);
+      }
+    }
+
+  }
+
+
 }
