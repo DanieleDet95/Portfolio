@@ -10990,7 +10990,7 @@ body .wrapper .block-info .top .info-text h5 {
 }
 
 body .wrapper .block-info .middle {
-  padding: 265px 25px 50px;
+  padding: 280px 25px 5px 25px;
   width: 100%;
   height: calc(98vh - 70px);
   overflow: auto;
@@ -11397,13 +11397,13 @@ body .wrapper footer a:hover {
   }
 
   body .wrapper .block-info {
-    height: 300px;
+    height: 225px;
     width: 100%;
   }
 
   body .wrapper .block-info .top {
     position: relative;
-    padding: 25px;
+    padding: 10px;
   }
 
   body .wrapper .block-info .middle {
